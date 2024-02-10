@@ -5,6 +5,7 @@ import 'package:envoymachaant/components/button.dart';
 import 'package:envoymachaant/constant/img.dart';
 import 'package:envoymachaant/onbording/login.dart';
 import 'package:envoymachaant/products/products.dart';
+import 'package:envoymachaant/services/auth-service.dart';
 import 'package:envoymachaant/styles/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -56,7 +57,9 @@ class _SplashScreen2State extends State<SplashScreen2> {
                 backgroundColor: AppColors.Primaryblue,
                 width: MediaQuery.sizeOf(context).width,
                 actionText: "Sign up",
-                onTap: () {},
+                onTap: () {
+                  addAccountRequest();
+                },
               ),
               SizedBox(
                 height: 32,

@@ -47,6 +47,7 @@ dependencies:
   flutter_rating_bar:
   google_maps_flutter:
   flutter_polyline_points:
+  encrypt: ^5.0.3
 dev_dependencies:
   flutter_test:
     sdk: flutter
